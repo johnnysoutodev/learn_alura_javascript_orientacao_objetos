@@ -5,7 +5,7 @@ class Cliente{
     saldo;
 }
 
-new Cliente();
+const cliente1 = new Cliente();
 
 const cliente1Nome = "Ricardo";
 const cliente1CPF = 11122233309;
