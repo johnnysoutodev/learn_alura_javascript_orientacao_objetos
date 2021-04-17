@@ -9,17 +9,11 @@ class ContaCorrente{
     saldo;
 
     sacar(valor){
-        if (contaCorrenteRicardo.saldo >= valorSacado) {
-            contaCorrenteRicardo.saldo -= valorSacado;
+        if (this.saldo >= valor) {
+            this.saldo -= valor;
         }
     }
 }
-
-let valorSacado = 200;
-if (contaCorrenteRicardo.saldo >= valorSacado) {
-    contaCorrenteRicardo.saldo -= valorSacado;
-}
-
 
 const cliente1 = new Cliente();
 cliente1.nome = "Ricardo";
