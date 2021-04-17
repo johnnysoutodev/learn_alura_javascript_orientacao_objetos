@@ -13,6 +13,12 @@ class ContaCorrente{
             this.saldo -= valor;
         }
     }
+
+    depostiar(valor){
+        if (valor > 0) {
+            this.saldo += valor;
+        }
+    }
 }
 
 const cliente1 = new Cliente();
@@ -27,10 +33,8 @@ cliente2.cpf = 88822233309;
 const contaCorrenteRicardo = new ContaCorrente();
 contaCorrenteRicardo.saldo = 0;
 contaCorrenteRicardo.agencia = 1001;
-console.log(contaCorrenteRicardo.saldo);
-contaCorrenteRicardo.saldo += 1000;
-contaCorrenteRicardo.sacar(20);
-console.log(contaCorrenteRicardo.saldo);
 
-console.log(cliente1);
-console.log(cliente2);
+contaCorrenteRicardo.depostiar(1000);
+contaCorrenteRicardo.sacar(20);
+
+console.log(contaCorrenteRicardo.saldo);
