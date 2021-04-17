@@ -9,7 +9,9 @@ class ContaCorrente{
     saldo;
 
     sacar(valor){
-
+        if (contaCorrenteRicardo.saldo >= valorSacado) {
+            contaCorrenteRicardo.saldo -= valorSacado;
+        }
     }
 }
 
